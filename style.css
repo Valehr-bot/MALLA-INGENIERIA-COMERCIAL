@@ -1,1 +1,42 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+h1 { text-align: center; }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.semester {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+}
+.semester h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.course {
+  margin: 6px 0;
+  padding: 8px;
+  background: #b2fab4;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+.course.approved {
+  background: #a5d6a7;
+  text-decoration: line-through;
+}
+.course.locked {
+  background: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
