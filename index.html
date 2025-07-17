@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Malla Interactiva por Semestre</h1>
+  <div class="grid">
+    <!-- Repite este bloque por semestre -->
+    <div class="semester">
+      <h2>Semestre 1</h2>
+      <div class="course" data-code="MAT" >Matemática</div>
+      <div class="course" data-code="ADM">Administración</div>
+      <div class="course" data-code="CON">Contabilidad</div>
+      <div class="course" data-code="ECO">Economía</div>
+      <div class="course" data-code="COM1">Comunicación Escrita I</div>
+      <div class="course" data-code="IDI1">Idioma Extranjero I</div>
+      <div class="course" data-code="OFI">Taller de Ofimática</div>
+    </div>
+    <!-- Semestre 2 -->
+    <div class="semester">
+      <h2>Semestre 2</h2>
+      <div class="course" data-code="COM2" data-prereq="COM1">Comunicación Escrita II</div>
+      <div class="course" data-code="IDI2" data-prereq="IDI1">Idioma Extranjero II</div>
+    </div>
+    <!-- Agrega los demás semestres -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
 
